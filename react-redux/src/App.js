@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-       <div>This is the Start point in App.js</div>
+       <div>This is the Start point</div>
       </header>
     </div>
   );
