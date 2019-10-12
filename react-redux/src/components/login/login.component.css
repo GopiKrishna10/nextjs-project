@@ -1,0 +1,35 @@
+.err-msg {
+    color: red;
+}
+
+.user-name {
+    margin: 5px;
+}
+
+.pass-word {
+    margin: 10px;
+}
+
+.main-Login {
+    border: 12px solid #d0d0ec;
+    padding: 50px;
+}
+
+.login-text {
+    font-size: 28px;
+    color: #39bd74;
+    margin: 20px
+}
+
+.login-btn {
+    width: 46%;
+    background-color: #6f2b2b;
+    border: none;
+    height: 24px;
+    margin: 14px;
+    color: white;
+}
+
+.login-btn-div {
+    margin-left: 40px;
+}
