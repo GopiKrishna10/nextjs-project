@@ -1,2 +1,2 @@
-# nextjs-project
-First project in NextJs
+# React-Redux-Sample-Project
+
