@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 import { LoginComponent } from './components/login/login.component';
-import { BrowserRouter as Router, Route, Link, Switch, Redirect } from 'react-router-dom'
-import { HomeComponent } from './components/home/home.component';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import  HomeComponent  from './components/home/home.component';
 import { AboutComponent } from './components/aboutItem/about.component'
 function App() {
   return (
