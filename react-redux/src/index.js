@@ -6,7 +6,9 @@ import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import reducer from './reducers/ageReducer';
-import thunk from 'redux-thunk';
+// import thunk from 'redux-thunk';
+import createSagaMiddleware from 'redux-saga';
+import {watchAgeUp} from './sagas/saga'
 //  custom Middle Ware 
 // const logAction = store => {
 //     return next => {
@@ -18,7 +20,11 @@ import thunk from 'redux-thunk';
 //     }
 // }
 // const store = createStore(reducer, applyMiddleware(logAction));
-const store = createStore(reducer, applyMiddleware(thunk));
+// const store = createStore(reducer, applyMiddleware(thunk));
+const sagaMiddleware = createSagaMiddleware()
+const store = createStore(reducer,applyMiddleware(sagaMiddleware));
+sagaMiddleware.run(watchAgeUp);
+
 
 
 ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
